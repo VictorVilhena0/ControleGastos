@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/summaryTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:fontFamily="@font/catamaran"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Resumo das Despesas"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addExpenseButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#447B76"
+        android:fontFamily="@font/catamaran"
+        android:padding="16dp"
+        android:text="Adicionar Despesa"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/summaryTextView" />
+
+    <Button
+        android:id="@+id/viewReportsButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#447B76"
+        android:fontFamily="@font/catamaran"
+        android:padding="16dp"
+        android:text="Ver Relatórios"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addExpenseButton" />
+
+    <Button
+        android:id="@+id/clearDataButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#447B76"
+        android:fontFamily="@font/catamaran"
+        android:padding="16dp"
+        android:text="Limpar Dados"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewReportsButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
